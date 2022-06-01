@@ -1,3 +1,3 @@
-- sentimental_analysis_article.py - код для определения эмоциональной окраски текста на основе набора данных из 50 000 отзывов с веб-сайта IMDB с равным количеством положительных и отрицательных отзывов. Ссылка на Dataset: https://ai.stanford.edu/~amaas/data/sentiment/
+- sentimental_analysis_article.py - код для определения эмоциональной окраски статьи на основе набора данных из 50 000 отзывов с веб-сайта IMDB с равным количеством положительных и отрицательных отзывов. Ссылка на Dataset: https://ai.stanford.edu/~amaas/data/sentiment/
 - reviews_wordcloud.py - код для создания облаков самых частотных слов для в наборе данных с веб-сайта IMDB
 - https://ru.megaindex.com/a/tcategories - сайт для определения тематики статей
