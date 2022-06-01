@@ -71,4 +71,3 @@ import json
 with open("corpus.json", "w") as write_file:
     json.dump(list_articles, write_file)
         
-
