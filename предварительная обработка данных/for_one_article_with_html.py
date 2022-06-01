@@ -60,10 +60,8 @@ from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 
 text_raw = " ".join(text_lemma)
-wordcloud = WordCloud().generate(text_raw)
+wordcloud = WordCloud(width=1000, height=1000, stopwords = stops_list, background_color = "#fff5ee", colormap = "tab10").generate(text_raw)
 wordcloud.to_file('wordcloud.png')
-
-
 
 
 
