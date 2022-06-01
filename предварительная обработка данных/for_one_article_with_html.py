@@ -23,7 +23,11 @@ text_tokens = word_tokenize(new_text)
 
 from nltk.corpus import stopwords
 #nltk.download('stopwords')
+#добавляем имя актора в стоп-слова
 english_stopwords = stopwords.words("english")
+english_stopwords.append('rowling')
+english_stopwords.append('jk')
+english_stopwords.append('joanna')
 no_stopwords = ''
 for w in text_tokens:
     if w not in english_stopwords:
@@ -58,6 +62,8 @@ import matplotlib.pyplot as plt
 text_raw = " ".join(text_lemma)
 wordcloud = WordCloud().generate(text_raw)
 wordcloud.to_file('wordcloud.png')
+
+
 
 
 
