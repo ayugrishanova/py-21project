@@ -1,4 +1,4 @@
-# набор данных, на котором будет происходить обучение и проверка модели - Large Movie Review by Эндрю Маасом.
+# набор данных, на котором будет основываться определение окраски текста - Large Movie Review
 # https://ai.stanford.edu/~amaas/data/sentiment/
 
 !tar xvzf aclImdb_v1.tar.gz
