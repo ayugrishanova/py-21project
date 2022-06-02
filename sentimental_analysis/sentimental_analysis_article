@@ -61,7 +61,8 @@ from bs4 import BeautifulSoup
 import string
 import nltk
 
-file = open('FILE_NAME', "r", encoding="utf-8") # выбрать нужный файл
+file_name = input('Введите название файла, окраску которого нужно определить:')
+file = open(file_name, "r", encoding="utf-8")
 contents = file.read()
 file.close()
 soup = BeautifulSoup(contents, 'lxml')
