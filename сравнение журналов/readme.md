@@ -7,6 +7,9 @@
 **working_bert.py** - код для сравнения текстов с помощью BERT'а
 
 Результаты работы на примере корпуса jk-rowling
+
 **corpus_magazines.json** - результат работы кода по созданию корпуса
+
 **jk-rowling-wordclouds.rar** - облака частотных слов
+
 **comparison.png** - результат работы BERT'а
