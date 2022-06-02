@@ -1,4 +1,5 @@
 - sentimental_analysis_article.ipynb - код для определения эмоциональной окраски статьи на основе набора данных из 50 000 отзывов с веб-сайта IMDB с равным количеством положительных и отрицательных отзывов. Ссылка на Dataset: https://ai.stanford.edu/~amaas/data/sentiment/
-- reviews_wordcloud.py - код для создания облаков самых частотных слов для в наборе данных с веб-сайта IMDB
+- reviews_wordcloud.ipynb - код для создания облаков самых частотных слов для в наборе данных с веб-сайта IMDB
 - https://ru.megaindex.com/a/tcategories - сайт для определения тематики статей
 - dataset_analysis.ipynb - код для просмотра выбранного набора данных, его характеристик и содержания
+- aclImdb_v1.tar.gz - скачанный Dataset с веб-сайта IMDB
