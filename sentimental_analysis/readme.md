@@ -2,3 +2,4 @@
 - reviews_wordcloud.ipynb - код для создания облаков самых частотных слов для в наборе данных с веб-сайта IMDB
 - https://ru.megaindex.com/a/tcategories - сайт для определения тематики статей
 - dataset_analysis.ipynb - код для просмотра выбранного набора данных, его характеристик и содержания
+если dataset_analysis.ipynb не открывается, смотреть: https://nbviewer.org/github/ayugrishanova/py-21project/blob/main/sentimental_analysis/dataset_analysis.ipynb
