@@ -1,8 +1,12 @@
+#функция для очистки текста
+
 def cleaned_article(filename):
     from bs4 import BeautifulSoup
     import string
     import nltk
-    
+
+#удаление html-тэгов
+
     file = open(filename, "r", encoding="utf-8")
     contents = file.read()
     file.close()
@@ -11,11 +15,14 @@ def cleaned_article(filename):
     html_free = soup.get_text('\n', strip='True')
     text = html_free.lower()
 
+# удаление пунктуации и других лишних символов   
     cleaning = string.punctuation + "\n\xa0«»\t—…" + string.digits + "'‘’"
     new_text = ''
     for ch in text:
         if ch not in cleaning:
             new_text += ch
+
+# токенизация и удаление стоп-слов
 
     from nltk import word_tokenize
     #nltk.download('punkt')
@@ -29,6 +36,7 @@ def cleaned_article(filename):
         if w not in english_stopwords:
             no_stopwords = no_stopwords + w + ' '
 
+# лемматизация и создание списка частотных лемм
 
     #pip install -U pip setuptools wheel
     #pip install -U spacy
@@ -59,6 +67,9 @@ for root, dirs, files in os.walk(user_path):
     for file in files: 
         filelist.append(os.path.join(root,file)) 
 
+# отбор статей, в которых имя актора упоминается 3 и более раз
+# создание единого файла с текстом всех статей
+
 text = ''
 for n in range(len(filelist)):
     processed_article = cleaned_article(filelist[n])
@@ -67,5 +78,6 @@ for n in range(len(filelist)):
 
 magazine = str(input('Напишите название журнала: '))
 magazine_name = magazine + '.txt'
+
 with open(magazine_name, "w") as write_file:
     print(text, file=write_file)
