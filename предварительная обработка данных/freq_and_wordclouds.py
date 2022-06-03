@@ -1,5 +1,7 @@
 def prepared(text):
     
+# лемматизация и формирование списка частотных лемм
+
     import spacy
     import nltk
 
@@ -21,7 +23,10 @@ from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 
 filename = str(input('Введите название файла с корпусом: '))
-stops=str(input('Напишите фамилию и формы имени актора, которые могут часто встречаться, с маленькой буквы через пробел: '))
+
+# чтобы исключить имя актора из частотных слов
+
+stops=str(input('Напишите фамилию и формы имени актора, которые могут часто встречаться, с маленькой буквы через пробел: ')) 
 stops_list=stops.split()
 
 import json
@@ -30,15 +35,18 @@ file = open(filename, 'r', encoding='utf-8')
 tg_dict=json.load(file)
 file.close()
 
+# создание облака частотных слов с помощью matplotlib
+
 freq_dict = dict()
 for t in tg_dict:
     freq = prepared(tg_dict[t])
     freq_dict.update({ t : freq[0] })
     text_raw = " ".join(freq[1])
+    # указываем размеры и цвета изображения, а также список стоп-слов    
     wordcloud = WordCloud(width=1000, height=1000, stopwords = stops_list, background_color = "#fff5ee", colormap = "tab10").generate(text_raw)
     cloudname = t + '.png'
     wordcloud.to_file(cloudname)
 
 with open("corpus.json", "w") as write_file:
-    json.dump(freq_dict, write_file)
+    json.dump(freq_dict, write_file)     # дополнительный файл со списками частотных лемм
 
