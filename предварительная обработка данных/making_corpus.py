@@ -28,26 +28,8 @@ def cleaned_article(filename):
     for w in text_tokens:
         if w not in english_stopwords:
             no_stopwords = no_stopwords + w + ' '
-
-
-    #pip install -U pip setuptools wheel
-    #pip install -U spacy
-    #python -m spacy download en_core_web_sm
-
-    import spacy
-
-    nlp = spacy.load('en_core_web_sm')
-    doc = nlp(no_stopwords)
-    lemmatization = []
-    for token in doc:
-        lemmatization.append(token.lemma_)
-
-    text_lemma = nltk.Text(lemmatization)
-
-    from nltk.probability import FreqDist
-    fdist = FreqDist(text_lemma)
-    
-    return no_stopwords, fdist
+            
+    return no_stopwords
 
 
 import os
