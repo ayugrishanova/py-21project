@@ -63,4 +63,4 @@ plt.figure(figsize=(50,50)) #настраиваем параметры изоб�
 labels = data.keys()
 sns.heatmap(scores, xticklabels=labels, yticklabels=labels, annot=True)
 
-plt.savefig('comparison.png')
+plt.savefig('comparison.png') #сохраняем изображение
