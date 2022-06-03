@@ -11,8 +11,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
- 
-with open('jk-rowling.json') as json_file:
+  
+with open('jk-rowling.json') as json_file:  #указываем json-файл с текстами
     data = json.load(json_file)
 
 spisok = []
@@ -59,7 +59,7 @@ for i in range(mean_pooled.shape[0]):
         mean_pooled
     )[0]
 
-plt.figure(figsize=(50,50))
+plt.figure(figsize=(50,50)) #настраиваем параметры изображения
 labels = data.keys()
 sns.heatmap(scores, xticklabels=labels, yticklabels=labels, annot=True)
 
