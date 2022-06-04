@@ -43,7 +43,8 @@ for t in tg_dict:
     freq_dict.update({ t : freq[0] })
     text_raw = " ".join(freq[1])
     # указываем размеры и цвета изображения, а также список стоп-слов    
-    wordcloud = WordCloud(width=1000, height=1000, stopwords = stops_list, background_color = "#fff5ee", colormap = "tab10").generate(text_raw)
+    wordcloud = WordCloud(width=1000, height=1000, stopwords = stops_list, 
+                          background_color = "#fff5ee", colormap = "tab10").generate(text_raw)
     cloudname = t + '.png'
     wordcloud.to_file(cloudname)
 
