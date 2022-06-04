@@ -2,8 +2,9 @@
 # Составление корпусов
 Меняйте строку 5 в соответствии с актором и со структурой сайта
 > Например, в dailymail.py корпус для разных акторов будет заваться так
-> url = "https://www.dailymail.co.uk/home/search.html?sel=site&searchPhrase=**jk+rowling**"
-> url = "https://www.dailymail.co.uk/home/search.html?sel=site&searchPhrase=**kanye+west**"
+> 
+> `url = "https://www.dailymail.co.uk/home/search.html?sel=site&searchPhrase=jk+rowling"`
+> `url = "https://www.dailymail.co.uk/home/search.html?sel=site&searchPhrase=kanye+west"`
 |---|---|
 |dailymail.py|[Сайт газеты](https://www.dailymail.co.uk)|
 |glamourmagazine.py|[Сайт газеты](https://www.glamourmagazine.co.uk)|
