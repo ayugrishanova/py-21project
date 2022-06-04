@@ -1,0 +1,10 @@
+json
+os
+nltk
+string
+bs4
+re
+pandas
+wordcloud
+spacy
+matplotlib.pyplot
