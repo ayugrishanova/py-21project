@@ -4,13 +4,16 @@
 > Например, в dailymail.py корпус для разных акторов будет заваться так
 > 
 > `url = "https://www.dailymail.co.uk/home/search.html?sel=site&searchPhrase=jk+rowling"`
+> 
 > `url = "https://www.dailymail.co.uk/home/search.html?sel=site&searchPhrase=kanye+west"`
+
+|   |   |
 |---|---|
-|dailymail.py|[Сайт газеты](https://www.dailymail.co.uk)|
-|glamourmagazine.py|[Сайт газеты](https://www.glamourmagazine.co.uk)|
-|hellomagazine.py|[Сайт газеты](https://www.hellomagazine.com)|
-|skynews.py|[Сайт газеты](https://news.sky.com)|
-|standard.py|[Сайт газеты](https://www.standard.co.uk)|
+|dailymail.py|[Сайт](https://www.dailymail.co.uk)|
+|glamourmagazine.py|[Сайт](https://www.glamourmagazine.co.uk)|
+|hellomagazine.py|[Сайт](https://www.hellomagazine.com)|
+|skynews.py|[Сайт](https://news.sky.com)|
+|standard.py|[Сайт](https://www.standard.co.uk)|
 # Вывод файлов для обработки корпусов
 Программы из следующего раздела обрабатывают выходные файлы программ из этого раздела
 |Программа|Вывод|Для чего используется|
